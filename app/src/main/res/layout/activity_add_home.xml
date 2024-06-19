@@ -117,6 +117,30 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:fontFamily="@font/poppins_semibold"
+                    android:text="Nama Rumah"
+                    android:textColor="#3C3C3C"
+                    android:textSize="17dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/nama_rumah_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nama_rumah_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:inputType="textMultiLine" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/poppins_semibold"
                     android:text="Jumlah Kamar Mandi"
                     android:textColor="#3C3C3C"
                     android:textSize="17dp" />

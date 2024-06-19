@@ -1,35 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Login">
+    android:orientation="vertical">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sampul" />
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="150dp"
-        android:fontFamily="@font/quicksand_bold"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lora_bold"
         android:text="Log In"
         android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
         android:textSize="30sp" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="0dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Username"
         android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
         android:textSize="20sp">
 
     </com.google.android.material.textview.MaterialTextView>
-
 
     <LinearLayout
         android:layout_width="370dp"
@@ -46,7 +48,6 @@
             android:layout_marginRight="10dp"
             android:src="@drawable/icon" />
 
-
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -61,7 +62,6 @@
                 android:layout_height="match_parent"
                 android:hint="Masukkan Username kamu"
                 android:inputType="textPersonName" />
-
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -98,7 +98,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="0dp"
             android:layout_marginEnd="20dp"
             app:hintEnabled="false"
             app:passwordToggleEnabled="true">
@@ -116,13 +116,12 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/login_button"
-        android:layout_width="300dp"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:backgroundTint="#0078FF"
         android:fontFamily="@font/poppins_semibold"
         android:text="Masuk" />
-
 
 </LinearLayout>
