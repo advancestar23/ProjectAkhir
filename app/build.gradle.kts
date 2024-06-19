@@ -57,7 +57,7 @@ dependencies {
     kapt("androidx.room:room-compiler:2.5.2")
 
     // image picker
-    implementation("com.github.esafirm:android-image-picker:3.1.0")
+//    implementation("com.github.esafirm:android-image-picker:3.1.0")
 
     // Glide
     implementation("com.github.bumptech.glide:glide:4.16.0")
