@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Judul halaman -->
+
+        <ImageView
+            android:id="@+id/navigate_retrofit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/baseline_delete_24"
+            app:layout_constraintBottom_toBottomOf="@+id/hotel_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/hotel_title"
+            app:layout_constraintTop_toTopOf="@+id/hotel_title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/hotel_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Swiss Chalet"
+            android:textAlignment="center"
+            android:textSize="20sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Gambar hotel -->
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/hotel_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:paddingStart="30dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_title"
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            app:srcCompat="@drawable/foto1" />
+
+
+        <!--   Deskripsi hotel -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/hotel_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:gravity="start"
+            android:justificationMode="inter_word"
+            android:text="Swiss Chalet adalah hunian yang menggabungkan pesona tradisional dengan kenyamanan modern, terinspirasi oleh arsitektur khas pegunungan Swiss. Setiap detail rumah ini dirancang untuk memberikan rasa hangat dan menyatu dengan alam, menampilkan arsitektur klasik Swiss yang menawan dengan sentuhan kayu alami dan detail indah. Terletak di area yang tenang dan sejuk, Swiss Chalet menawarkan lokasi strategis ideal untuk keluarga yang mencari ketenangan. Dilengkapi dengan teknologi terkini dan ruang terbuka seperti taman pribadi serta balkon luas, hunian ini menyediakan kenyamanan sehari-hari sambil menikmati udara segar dan pemandangan indah. Swiss Chalet tidak hanya menawarkan tempat tinggal, tetapi juga gaya hidup yang seimbang antara kemewahan dan kedamaian alam, menjadikan setiap hari serasa liburan."
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hotel_image" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/kamar_mandi_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:justificationMode="inter_word"
+            android:text="Jumlah Kamar Mandi: "
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/hotel_description"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_description" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/kamar_mandi_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:justificationMode="inter_word"
+            android:text="4"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kamar_mandi_title"
+            app:layout_constraintStart_toEndOf="@+id/kamar_mandi_title"
+            app:layout_constraintTop_toTopOf="@+id/kamar_mandi_title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/kamar_tidur_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="start"
+            android:justificationMode="inter_word"
+            android:text="Jumlah Kamar tidur: "
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/kamar_mandi_title"
+            app:layout_constraintTop_toTopOf="@+id/kamar_mandi_title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/kamar_tidur_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:justificationMode="inter_word"
+            android:text="4"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/kamar_tidur_title"
+            app:layout_constraintStart_toEndOf="@+id/kamar_tidur_title"
+            app:layout_constraintTop_toTopOf="@+id/kamar_tidur_title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fasilitas1_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:justificationMode="inter_word"
+            android:text="Fasilitas 1: "
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/kamar_tidur_title"
+            app:layout_constraintTop_toBottomOf="@+id/kamar_tidur_title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fasilitas1_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="TV Cable "
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fasilitas1_title"
+            app:layout_constraintStart_toEndOf="@+id/fasilitas1_title"
+            app:layout_constraintTop_toTopOf="@+id/fasilitas1_title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fasilitas2_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:justificationMode="inter_word"
+            android:text="Fasilitas 2: "
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/fasilitas1_title"
+            app:layout_constraintTop_toBottomOf="@+id/fasilitas1_title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fasilitas2_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="Internet "
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fasilitas2_title"
+            app:layout_constraintStart_toEndOf="@+id/fasilitas2_title"
+            app:layout_constraintTop_toTopOf="@+id/fasilitas2_title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/harga_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:justificationMode="inter_word"
+            android:text="Harga: "
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/fasilitas2_title"
+            app:layout_constraintTop_toBottomOf="@+id/fasilitas2_title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/harga_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="30 Juta"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/harga_title"
+            app:layout_constraintStart_toEndOf="@+id/harga_title"
+            app:layout_constraintTop_toTopOf="@+id/harga_title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/listrik_tittle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:justificationMode="inter_word"
+            android:text="Kapasitas listrik: "
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/harga_title"
+            app:layout_constraintStart_toStartOf="@+id/fasilitas2_title"
+            app:layout_constraintTop_toBottomOf="@+id/fasilitas2_title" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/listrik_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:text="2000KwH"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/listrik_tittle"
+            app:layout_constraintStart_toEndOf="@+id/listrik_tittle"
+            app:layout_constraintTop_toTopOf="@+id/listrik_tittle" />
+
+        <Button
+            android:id="@+id/btn_savedPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/harga_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
